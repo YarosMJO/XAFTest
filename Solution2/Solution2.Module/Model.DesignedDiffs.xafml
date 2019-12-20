@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="Solution2">
+  <Options>
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="19.2.4.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <DetailView Id="Master_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="6.4516129032258061">
+            <LayoutGroup Id="Master" Caption="Master" RelativeSize="100">
+              <LayoutItem Id="Name" Index="0" RelativeSize="100" />
+              <LayoutItem Id="Id" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="Pets_Group" Direction="Vertical" RelativeSize="93.548387096774192">
+            <LayoutItem Id="Pets" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Master_Pets_ListView">
+      <Columns>
+        <ColumnInfo Id="Name" SortOrder="Ascending" />
+      </Columns>
+    </ListView>
+    <DetailView Id="Pet_DetailView">
+      <Items>
+        <PropertyEditor Id="Master" PropertyName="Master._MasterNumber" LookupEditorMode="Auto" AllowEdit="False" PropertyEditorType="JetBrains.UI.SrcView.LayoutDesigner.Controls.Editors.StringEditor" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="Pet" RelativeSize="100">
+              <LayoutItem Id="Name" Index="0" RelativeSize="5.4329371816638368" />
+              <LayoutItem Id="Master" Index="1" RelativeSize="94.567062818336169" />
+              <LayoutItem Id="Id" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>
